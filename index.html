@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,75 +12,54 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 <title>E R N I E</title>
 <style>
-    .borderLeftRight {
-    display: inline-block;
-    position: relative;
-    color: #1B263B;
-  }
-  
-  .borderLeftRight::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #1B263B;
-    transform-origin: bottom right;
-    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-  }
-  
-  .borderLeftRight:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  
 
-    .mainbg {
-        background-color: #FFFFFF;
+    .mainborder {
+        border-color:#5B5D6B ;
     }
-    .inter {
-        font-family: Inter, sans-serif;
+    .mainbg {
+        background-color: #1C1C21;
     }
 
     .maintext {
-        color: #161616;
+        color: #5B5D6B;
     }
 </style>
 </head>
-<body class="mainbg inter flex">
-    <div class="container mx-auto flex flex-col h-screen">
-
-        <!--NAVBAR START-->
-        <nav class="flex flex-wrap justify-between text-5xl font-bold bg-blue-300 p-2 md:py-12">
-            <div class="bg-pink-300">
-                <a class="">ERNIE</a>
-            </div>
-            <div class="bg-yellow-200 space-x-2 text-center">
-                <a href="#" class="transition duration-300 ease-in-out hover:bg-pink-300">LINKS</a>
-            </div>
-        </nav>
-        <!--NAVBAR END-->
-
-        <!--HERO START-->
-        <main class="bg-purple-400 h-full text-center flex flex-wrap content-center justify-around">
-            <h1 class="text-5xl md:text-8xl lg:text-9xl font-bold bg-red-400">PLACEHOLDER TEXT</h1>
-        </main>
-
-        <!--HERO END-->
-
-        <!--FOOTER START-->
-        <footer class="bg-indigo-400 h-36 lg:h-40 xl:h-20 flex flex-wrap justify-between content-center">
-            <p class="text-center items-center bg-red-300 font-bold md:text-lg lg:text-3xl w-full xl:w-6/12 h-8 lg:h-10 xl:h-9"><i class="far fa-copyright"></i> Copyright 2021 Ernie</p>
-            <div class="bg-pink-300 text-center space-x-8 md:text-lg lg:text-3xl w-full xl:w-6/12 h-8 lg:h-10 xl:h-9">
-                <a href="#" class="transition duration-300 ease-in-out hover:bg-green-400"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="transition duration-300 ease-in-out hover:bg-green-400"><i class="fab fa-steam"></i></a>
-                <a href="#" class="transition duration-300 ease-in-out hover:bg-green-400"><i class="fab fa-youtube"></i></a>
-            </div>
-        </footer>
-        <!--FOOTER END-->
-
-        
+<body class="mainbg h-screen flex flex-col">
+    <!--NOTIF-->
+    <div class="bg-blue-100 text-center font-bold maintext md:text-xl lg:text-2xl">
+        <a href="#">Notification test! We added A, B and C!</a>
     </div>
+    <!--NOTIF-->
+
+    <!--NAV-->
+    <nav class="w-10/12 xl:w-7/12 mx-auto flex flex-wrap justify-between maintext font-bold text-3xl md:text-5xl lg:text-6xl py-6">
+        <div>
+            <a href="#">Ernie</a>
+        </div>
+        <div>
+            <a href="#">Links</a>
+        </div>
+    </nav>
+    <!--NAV-->
+    <!--MAIN-->
+    <hero class="h-full">
+        <div class="w-7/12 mx-auto">
+
+        </div>
+    </hero>
+    <!--MAIN-->
+    <!--FOOTER-->
+    <footer class="flex flex-wrap mx-auto w-10/12 xl:w-7/12 py-6 maintext font-bold md:text-xl lg:text-2xl">
+        <div class="w-full text-center">
+            <p>C Copyright 2021 Ernie</p>
+        </div>
+        <div class="w-full text-center">
+            <a href="#">Twitter</a>
+            <a href="#">Steam</a>
+            <a href="#">Discord</a>
+        </div>
+    </footer>
+    <!--FOOTER-->
 </body>
+</html>
